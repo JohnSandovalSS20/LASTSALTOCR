@@ -1,0 +1,21 @@
+
+
+<div class="container">
+  <div class="row"> 
+    <div class="col-lg-12"> 
+      <h1 class="my-3 text-center"><a href="#"><img src="https://i.ibb.co/fkRL2Ph/Umbrella-Corporation3.png" alt="Umbrella-Corporation3" border="0" height="80px" widht ="80px"></a>  SALT'S OCR </h1>
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12"> 
+      <button class="btn btn-secondary btn-block" (click)="toggleMode()">Modo (Imagen <-> Cámara)</button>
+      <div class="row">
+        <div class="col-lg-12">
+          <app-ocrbywebcam *ngIf="modeCam"></app-ocrbywebcam>
+          <app-ocrbyimage *ngIf="modeImage"></app-ocrbyimage>
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
